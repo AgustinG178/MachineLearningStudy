@@ -7,8 +7,7 @@ datos = pd.read_csv("temperaturas.csv")
 datos.info()
 datos.head()
 
-sb.scatterplot(x="celsius", y="fahrenheit", data=datos,
-               hue="fahrenheit", palette="coolwarm")
+sb.scatterplot(x="celsius", y="fahrenheit", data=datos)
 
 #Caracteristicas (X), etiqueta (y)
 X = datos["celsius"]
